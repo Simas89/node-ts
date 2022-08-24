@@ -4,7 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "postinstall": "tsc",
     "start": "node build/index.js",
     "build": "tsc -p .",
     "dev": "nodemon --watch src/** --exec ts-node  src/index.ts"
