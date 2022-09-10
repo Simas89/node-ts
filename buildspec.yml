@@ -7,14 +7,15 @@ phases:
       nodejs: 12
     commands:
       - npm install -g typescript
-      - npm install -g yarn
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - yarn install
+      - npm install
   build:
     commands:
-      - yarn build
+      - echo Build started on `date`
+      - npm run build
+      - npm prune --production
   post_build:
     commands:
       - echo Build completed on `date`
