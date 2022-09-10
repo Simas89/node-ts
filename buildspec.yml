@@ -20,6 +20,6 @@ phases:
 artifacts:
   files:
     - build/**/*
-    # - package.json
+    - package.json
     # - yarn.lock
     # - node_modules/**/*
