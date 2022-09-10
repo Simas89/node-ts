@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node build/index.js",
-    "build1": "tsc -p .",
-    "build": "node ./build.js",
+    "build": "tsc -p .",
     "dev": "nodemon --watch src/** --exec ts-node  src/index.ts"
   },
   "dependencies": {

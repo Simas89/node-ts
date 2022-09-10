@@ -15,7 +15,6 @@ phases:
     commands:
       - echo Build started on `date`
       - npm run build
-      - npm prune --production
   post_build:
     commands:
       - echo Build completed on `date`
@@ -23,5 +22,5 @@ artifacts:
   files:
     - build/**/*
     - package.json
-    # - package-lock.json
-    # - node_modules/**/*
+    - yarn.lock
+    - node_modules/**/*
