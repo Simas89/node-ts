@@ -3,7 +3,7 @@ const childProcess = require("child_process");
 
 try {
   // Remove current build
-  fs.removeSync("/dist");
+  fs.removeSync("/build");
 
   // Transpile the typescript files
   childProcess.exec("tsc --build tsconfig.json");
