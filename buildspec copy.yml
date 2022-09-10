@@ -7,9 +7,9 @@ phases:
       nodejs: 12
     commands:
       - npm install -g typescript
-      - npm install -g yarn
   pre_build:
     commands:
+      - echo Installing source NPM dependencies...
       - npm install
   build:
     commands:
@@ -23,5 +23,5 @@ artifacts:
   files:
     - build/**/*
     - package.json
-    # - package-lock.json
-    # - node_modules/**/*
+    - package-lock.json
+    - node_modules/**/*
